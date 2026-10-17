@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#07111f">
+<meta name="description" content="Lokeshwar V — Cybersecurity portfolio focused on SOC operations, threat detection, incident response, cloud security, and ethical hacking.">
+<title>Lokeshwar V | Cybersecurity Portfolio</title>
+<style>
+:root{--bg:#07111f;--panel:#0d1a2b;--panel2:#102238;--text:#e8f0fb;--muted:#9fb0c7;--line:#21354d;--accent:#50e3c2;--blue:#70a7ff;--glow:rgba(80,227,194,.12);--max:1120px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:86px}body{margin:0;background:radial-gradient(ellipse at 75% 0%,#102c43 0,transparent 35%),var(--bg);color:var(--text);font:16px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:inherit;text-decoration:none}a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:4px}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}.nav{position:sticky;top:0;z-index:20;background:rgba(7,17,31,.88);backdrop-filter:blur(16px);border-bottom:1px solid rgba(159,176,199,.15)}.navin{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{font-weight:800;letter-spacing:-.04em;font-size:1.12rem}.brand span{color:var(--accent)}.links{display:flex;align-items:center;gap:22px;color:var(--muted);font-size:.9rem}.links a:hover{color:var(--accent)}.menu{display:none;background:none;color:var(--text);border:1px solid var(--line);padding:8px 11px;border-radius:9px}.hero{padding:88px 0 72px;display:grid;grid-template-columns:1.3fr .7fr;gap:48px;align-items:center;min-height:570px}.eyebrow{color:var(--accent);font:700 .78rem/1.4 ui-monospace,SFMono-Regular,monospace;letter-spacing:.14em;text-transform:uppercase}.hero h1{font-size:clamp(2.8rem,6.2vw,5.1rem);line-height:1.03;letter-spacing:-.065em;margin:18px 0 20px}.hero h1 em{font-style:normal;color:var(--accent)}.lead{max-width:670px;color:#b6c5d9;font-size:1.08rem}.actions{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 17px;border-radius:10px;border:1px solid var(--line);font-weight:750;font-size:.92rem;transition:.2s}.btn.primary{background:var(--accent);color:#05201e;border-color:var(--accent)}.btn:hover{transform:translateY(-2px);border-color:var(--accent)}.quick{display:flex;gap:18px;flex-wrap:wrap;color:var(--muted);font-size:.88rem}.quick a{border-bottom:1px solid #40536b}.terminal{background:linear-gradient(145deg,rgba(16,34,56,.98),rgba(8,20,34,.98));border:1px solid #2a4159;border-radius:18px;padding:22px;box-shadow:0 28px 80px rgba(0,0,0,.24);transform:rotate(1deg)}.termhead{display:flex;gap:7px;border-bottom:1px solid var(--line);padding-bottom:15px;margin-bottom:17px}.dot{width:9px;height:9px;border-radius:50%;background:#52677d}.term-title{margin-left:auto;color:#71869d;font: .72rem ui-monospace,monospace}.code{font: .84rem/1.95 ui-monospace,SFMono-Regular,monospace;color:#b8c8dc;overflow-wrap:anywhere}.code .green{color:var(--accent)}.code .blue{color:var(--blue)}.code .dim{color:#71869d}.statgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:20px}.stat{padding:13px;background:rgba(5,15,27,.6);border:1px solid var(--line);border-radius:11px}.stat strong{display:block;color:var(--accent);font-size:1.25rem}.stat small{color:var(--muted)}section{padding:72px 0;border-top:1px solid rgba(159,176,199,.12)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:30px}.section-head h2{font-size:clamp(1.8rem,3vw,2.55rem);letter-spacing:-.05em;line-height:1.1;margin:9px 0 0}.section-head p{max-width:450px;color:var(--muted);margin:0}.aboutgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.card{background:linear-gradient(145deg,rgba(13,26,43,.95),rgba(10,22,37,.9));border:1px solid var(--line);border-radius:15px;padding:23px}.card h3{margin:0 0 10px;font-size:1.08rem}.card p{margin:0;color:var(--muted)}.chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:17px}.chip{padding:6px 10px;border:1px solid #29425b;background:#0b1b2c;color:#c7d6e9;border-radius:8px;font-size:.82rem}.skillgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.skillcard .icon{width:39px;height:39px;display:grid;place-items:center;border:1px solid #28516a;background:var(--glow);color:var(--accent);border-radius:10px;margin-bottom:14px;font-weight:800}.skillcard h3{margin:0 0 8px}.skillcard p{font-size:.92rem}.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.project{display:flex;flex-direction:column;min-height:270px;position:relative;overflow:hidden}.project:before{content:"";position:absolute;inset:0 auto auto 0;width:100%;height:3px;background:linear-gradient(90deg,var(--accent),transparent)}.project-top{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:16px}.project-type{font:700 .72rem ui-monospace,monospace;color:var(--accent);text-transform:uppercase;letter-spacing:.08em}.project h3{font-size:1.18rem;margin:0 0 9px}.project p{color:var(--muted);margin:0 0 15px}.project ul{padding-left:18px;margin:0 0 18px;color:#c0cfe0;font-size:.91rem}.project li{margin:5px 0}.project .project-link{margin-top:auto;color:var(--accent);font-weight:750;font-size:.9rem}.timeline{display:grid;grid-template-columns:170px 1fr;gap:24px;padding:22px 0;border-bottom:1px solid var(--line)}.timeline:last-child{border-bottom:0}.date{color:var(--accent);font: .8rem ui-monospace,monospace;padding-top:4px}.timeline h3{margin:0 0 4px}.timeline .org{color:var(--muted);font-size:.9rem}.timeline p{color:#bdcadd;margin:10px 0 0}.certs{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.cert{display:flex;align-items:center;gap:13px}.certmark{flex:0 0 38px;height:38px;display:grid;place-items:center;border-radius:10px;color:var(--accent);background:var(--glow);border:1px solid #28516a;font-weight:800}.cert strong{display:block;font-size:.95rem}.cert small{color:var(--muted)}.contactbox{display:grid;grid-template-columns:1fr auto;gap:25px;align-items:center;background:linear-gradient(115deg,#10283b,#0b1b2b);border:1px solid #2a465c;border-radius:18px;padding:30px}.contactbox h2{margin:8px 0;font-size:2rem;letter-spacing:-.04em}.contactbox p{margin:0;color:var(--muted)}footer{padding:26px 0;color:#8093aa;font-size:.85rem}.footerin{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.muted{color:var(--muted)}.smallnote{font-size:.82rem;color:#8093aa;margin-top:18px}
+@media(max-width:820px){#event .statgrid{grid-template-columns:repeat(2,1fr)!important}.hero{grid-template-columns:1fr;gap:32px;padding-top:62px;min-height:unset}.terminal{max-width:560px;transform:none}.skillgrid{grid-template-columns:repeat(2,1fr)}.section-head{display:block}.section-head p{margin-top:13px}.links{gap:13px}}
+@media(max-width:600px){#event .statgrid{grid-template-columns:repeat(2,1fr)!important}.wrap{width:min(100% - 28px,var(--max))}.navin{min-height:64px}.menu{display:block}.links{display:none;position:absolute;top:64px;left:0;right:0;padding:18px 22px;background:#091727;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.links.open{display:flex}.hero{padding:54px 0}.hero h1{font-size:3.2rem}.aboutgrid,.projects,.certs,.skillgrid{grid-template-columns:1fr}.timeline{grid-template-columns:1fr;gap:6px}.contactbox{grid-template-columns:1fr;padding:23px}.actions .btn{flex:1}.section-head h2{font-size:2rem}section{padding:55px 0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap navin">
+    <a class="brand" href="#home">LOKESH<span>.</span>SEC</a>
+    <button class="menu" id="menu" aria-expanded="false" aria-controls="navlinks">Menu</button>
+    <nav class="links" id="navlinks" aria-label="Main navigation">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#event">Contest Event</a><a href="#experience">Experience</a><a href="#certifications">Certifications</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="wrap hero" id="home" style="border-top:0">
+  <div>
+    <div class="eyebrow">Cybersecurity • SOC Operations • Cloud Security</div>
+    <h1>Defending systems.<br><em>Investigating threats.</em></h1>
+    <p class="lead">I'm <strong>Lokeshwar V</strong>, a Cybersecurity engineering student focused on security monitoring, threat detection, incident response, vulnerability assessment, and cloud security. I turn logs and alerts into structured investigations.</p>
+    <div class="actions">
+      <a class="btn primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
+      <a class="btn" href="resume.pdf" target="_blank" rel="noopener">View résumé <span aria-hidden="true">↓</span></a>
+    </div>
+    <div class="quick">
+      <a href="https://github.com/Loke31033" target="_blank" rel="noopener">GitHub ↗</a>
+      <a href="https://www.linkedin.com/in/lokeshwar-v-011b20289" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a href="mailto:lokeshwar.v06@gmail.com">Email ↗</a>
+    </div>
+  </div>
+  <aside class="terminal" aria-label="Cybersecurity skills terminal illustration">
+    <div class="termhead"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="term-title">security-ops / profile</span></div>
+    <div class="code">
+      <div><span class="dim">$</span> whoami</div>
+      <div class="green">lokeshwar-v / cybersec</div>
+      <div><span class="dim">$</span> focus --areas</div>
+      <div><span class="blue">SOC</span> · Threat Detection · IR</div>
+      <div><span class="blue">SIEM</span> · Splunk · SPL · Sysmon</div>
+      <div><span class="blue">Cloud</span> · AWS IAM · CloudTrail</div>
+      <div><span class="blue">VAPT</span> · OWASP · Burp Suite</div>
+      <div><span class="dim">$</span> status --career</div>
+      <div class="green">Open to SOC / Cybersecurity roles</div>
+    </div>
+    <div class="statgrid">
+      <div class="stat"><strong>10,000+</strong><small>Windows & Sysmon logs analysed</small></div>
+      <div class="stat"><strong>6 scenarios</strong><small>SOC Alert Triage Contest</small></div>
+    </div>
+  </aside>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="section-head"><div><div class="eyebrow">01 / About</div><h2>Security-minded.<br>Evidence-driven.</h2></div><p>My work combines practical log analysis, attack simulation, and security controls across endpoint, web application, and cloud environments.</p></div>
+    <div class="aboutgrid">
+      <article class="card"><h3>My approach</h3><p>Investigate suspicious activity using event and system logs, correlate evidence, extract indicators of compromise, map activity to MITRE ATT&CK, and document findings for response and remediation.</p></article>
+      <article class="card"><h3>Education</h3><p><strong>B.Tech — Computer Science Engineering (Cybersecurity)</strong><br>SRM Institute of Science and Technology, Tiruchirappalli<br><span class="muted">Expected graduation: 2027 · CGPA: 9.2/10</span></p></article>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="section-head"><div><div class="eyebrow">02 / Technical toolkit</div><h2>Skills for security operations.</h2></div><p>Grouped by the practical tasks and environments described in my résumé.</p></div>
+    <div class="skillgrid">
+      <article class="card skillcard"><div class="icon">01</div><h3>SOC & Incident Response</h3><p>Alert triage, security monitoring, incident investigation, escalation, IOC extraction, timeline reconstruction.</p><div class="chips"><span class="chip">Splunk SIEM</span><span class="chip">Splunk SPL</span><span class="chip">MITRE ATT&CK</span></div></article>
+      <article class="card skillcard"><div class="icon">02</div><h3>Endpoint & Log Analysis</h3><p>Windows Security Events, Sysmon, Linux/SSH logs, authentication anomalies, suspicious processes and log correlation.</p><div class="chips"><span class="chip">4624 / 4625</span><span class="chip">4688</span><span class="chip">1102</span></div></article>
+      <article class="card skillcard"><div class="icon">03</div><h3>Cloud Security</h3><p>AWS access control, least privilege, cloud audit logging, secure storage, network controls and misconfiguration analysis.</p><div class="chips"><span class="chip">AWS IAM</span><span class="chip">S3</span><span class="chip">EC2</span><span class="chip">CloudTrail</span><span class="chip">Azure fundamentals</span></div></article>
+      <article class="card skillcard"><div class="icon">04</div><h3>Vulnerability Assessment</h3><p>Web application security testing in controlled labs, identifying common weaknesses and documenting remediation recommendations.</p><div class="chips"><span class="chip">OWASP Top 10</span><span class="chip">SQLi</span><span class="chip">XSS</span><span class="chip">Burp Suite</span></div></article>
+      <article class="card skillcard"><div class="icon">05</div><h3>Tools & Networking</h3><p>Security reconnaissance, packet analysis, network protocol fundamentals and security investigation tooling.</p><div class="chips"><span class="chip">Nmap</span><span class="chip">Wireshark</span><span class="chip">Zeek</span><span class="chip">VirusTotal</span><span class="chip">TCP/IP</span><span class="chip">DNS</span></div></article>
+      <article class="card skillcard"><div class="icon">06</div><h3>Scripting & Data</h3><p>Using scripts and lightweight data stores to support investigation, automation, and security workflows.</p><div class="chips"><span class="chip">Python</span><span class="chip">Bash</span><span class="chip">SQLite</span><span class="chip">SQL fundamentals</span><span class="chip">Linux CLI</span></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="section-head"><div><div class="eyebrow">03 / Selected work</div><h2>Projects built around real investigations.</h2></div><p>Featured first: the SOC Alert Triage Contest I built and organized, followed by my SOC, cloud security, digital forensics and web application security projects.</p></div>
+    <div class="projects">
+      <article class="card project"><div class="project-top"><span class="project-type">Event Organizer · SOC Engineering</span><span class="muted">Featured</span></div><h3>SOC Alert Triage Contest</h3><p>Designed and built a hands-on SOC alert investigation contest where participants investigate security events using a SIEM workflow and submit evidence-based answers.</p><ul><li>Structured around 10 teams, 6 scenarios and 60 investigation questions</li><li>Created scenario-based datasets and Kibana investigation workflows, including SSH brute force, Cloud IAM credential abuse and ransomware behavior detection</li><li>Built a web platform with Next.js, FastAPI, PostgreSQL and a Python evaluation engine; deployed the contest infrastructure on Azure with Elasticsearch and Kibana</li></ul><div class="chips"><span class="chip">Elasticsearch</span><span class="chip">Kibana</span><span class="chip">FastAPI</span><span class="chip">Next.js</span><span class="chip">PostgreSQL</span><span class="chip">Azure</span></div><div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:18px"><a class="project-link" href="https://github.com/Loke31033/SOC-Alert-Triage" target="_blank" rel="noopener">Source code on GitHub ↗</a><a class="project-link" href="https://socalerttriage.me/" target="_blank" rel="noopener">Live contest website ↗</a></div></article>
+      <article class="card project"><div class="project-top"><span class="project-type">SOC / SIEM</span><span class="muted">01</span></div><h3>SOC Attack Detection & Incident Response Lab</h3><p>A simulated SOC environment using Kali Linux, Windows, and Splunk to investigate attack activity.</p><ul><li>Detection for brute force, PowerShell, persistence, privilege escalation and lateral movement</li><li>Event IDs 4624, 4625, 4688 and 1102</li><li>Log correlation, IOC extraction and MITRE ATT&CK mapping</li></ul><a class="project-link" href="https://github.com/Loke31033" target="_blank" rel="noopener">Find project on GitHub ↗</a></article>
+      <article class="card project"><div class="project-top"><span class="project-type">Cloud Security</span><span class="muted">02</span></div><h3>AWS Cloud Security Labs</h3><p>Hands-on practice securing cloud resources and reviewing access and audit activity.</p><ul><li>IAM users, groups, policies, roles and least privilege</li><li>S3 access controls and secure storage concepts</li><li>EC2 security groups and CloudTrail monitoring</li></ul><a class="project-link" href="https://github.com/Loke31033" target="_blank" rel="noopener">Find project on GitHub ↗</a></article>
+      <article class="card project"><div class="project-top"><span class="project-type">DFIR / Automation</span><span class="muted">03</span></div><h3>CYBER-SOC v2.0 — Incident Response & Forensic Dashboard</h3><p>A SOC investigation dashboard concept for monitoring, evidence correlation and incident handling.</p><ul><li>Correlates multi-source logs and suspicious IP activity</li><li>Automates forensic timeline reconstruction</li><li>Severity-based alert classification and Python/SQLite IOC extraction</li></ul><a class="project-link" href="https://github.com/Loke31033" target="_blank" rel="noopener">Find project on GitHub ↗</a></article>
+      <article class="card project"><div class="project-top"><span class="project-type">Threat Detection</span><span class="muted">04</span></div><h3>SOC Threat Detection using Splunk</h3><p>Detection engineering practice focused on authentication activity and lateral movement indicators.</p><ul><li>Splunk SPL queries for brute-force and unauthorized access</li><li>Windows Event Logs, Sysmon and SSH log analysis</li><li>IOC extraction and MITRE ATT&CK technique mapping</li></ul><a class="project-link" href="https://github.com/Loke31033" target="_blank" rel="noopener">Find project on GitHub ↗</a></article>
+      <article class="card project"><div class="project-top"><span class="project-type">Web Application Security</span><span class="muted">05</span></div><h3>Ethical Hacking & Web Security Labs</h3><p>Controlled testing exercises to understand common application vulnerabilities and remediation.</p><ul><li>SQL injection, XSS and broken authentication testing</li><li>Command injection and information gathering exercises</li><li>Phishing simulation and email analysis</li></ul><a class="project-link" href="https://github.com/Loke31033" target="_blank" rel="noopener">Find project on GitHub ↗</a></article>
+    </div>
+    <p class="smallnote">Note: Project links currently point to your GitHub profile because the résumé provides repository names but not direct repository URLs. Replace each link with the exact repository URL when confirmed.</p>
+  </div>
+</section>
+
+
+<section id="event">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="eyebrow">04 / Cybersecurity Event</div><h2>SOC Alert Triage Contest.</h2></div>
+      <p>A hands-on security investigation challenge built around realistic security-event datasets, scenario-specific questions, and evidence-based triage.</p>
+    </div>
+    <div class="card" style="padding:clamp(22px,4vw,36px);">
+      <div class="project-top"><span class="project-type">Event Platform · Blue Team Investigation</span><span class="muted">2026</span></div>
+      <h3 style="font-size:1.45rem;margin:0 0 12px;">From raw security events to defensible triage decisions</h3>
+      <p style="color:var(--muted);max-width:820px;margin:0;">The SOC Alert Triage Contest gives participants a structured way to investigate security scenarios, examine logs in Kibana, interpret evidence, and answer scenario-specific questions. The platform supports team/scenario tracking and automated evaluation.</p>
+      <div class="statgrid" style="grid-template-columns:repeat(4,1fr);">
+        <div class="stat"><strong>10</strong><small>Teams</small></div>
+        <div class="stat"><strong>6</strong><small>Investigation scenarios</small></div>
+        <div class="stat"><strong>60</strong><small>Scenario-specific questions</small></div>
+        <div class="stat"><strong>600</strong><small>Maximum marks</small></div>
+      </div>
+      <div class="aboutgrid" style="margin-top:18px;">
+        <div>
+          <h3>Investigation scenarios</h3>
+          <div class="chips">
+            <span class="chip">SSH Brute Force</span>
+            <span class="chip">Cloud IAM Credential Abuse</span>
+            <span class="chip">Ransomware Behavior Detection</span>
+            <span class="chip">3 additional scenarios</span>
+          </div>
+        </div>
+        <div>
+          <h3>Platform & technologies</h3>
+          <div class="chips">
+            <span class="chip">Kibana</span><span class="chip">Elasticsearch</span>
+            <span class="chip">Next.js</span><span class="chip">FastAPI</span>
+            <span class="chip">Python evaluation engine</span><span class="chip">PostgreSQL</span>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top:24px;">
+        <h3>What this demonstrates</h3>
+        <ul style="color:#c0cfe0;padding-left:20px;">
+          <li>Designing scenario-based security investigations using generated event datasets.</li>
+          <li>Supporting log exploration and evidence-led analysis through Kibana and Elasticsearch.</li>
+          <li>Connecting a web interface, backend API, database, and automated scoring workflow.</li>
+          <li>Structuring contest access and results around teams and assigned scenarios.</li>
+        </ul>
+      </div>
+      <div class="actions" style="margin-bottom:0;">
+        <a class="btn primary" href="https://socalerttriage.me/" target="_blank" rel="noopener">Visit live contest website ↗</a>
+      </div>
+    </div>
+    <p class="smallnote">Contest figures reflect the planned format: 10 teams, 6 scenarios, 20 questions per scenario, and 600 maximum marks overall.</p>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="section-head"><div><div class="eyebrow">05 / Experience</div><h2>Practical security experience.</h2></div></div>
+    <div class="timeline"><div class="date">JUN 2024 — AUG 2024</div><div><h3>Cyber Security Intern — SOC Operations (Virtual)</h3><div class="org">Elevate Labs (Skill India / MSME)</div><p>Monitored and investigated authentication anomalies and suspicious processes; analysed 10,000+ Windows Security and Sysmon logs; performed alert triage, IOC extraction, investigation, escalation and incident documentation.</p></div></div>
+    <div class="timeline"><div class="date">SEP 2025 — DEC 2025</div><div><h3>Ethical Hacking Intern (Virtual)</h3><div class="org">InLighnX Global Pvt. Ltd.</div><p>Conducted web application vulnerability assessments, tested against OWASP Top 10 issues including SQL injection and XSS, validated techniques in controlled labs, and helped prepare remediation recommendations and technical findings.</p></div></div>
+  </div>
+</section>
+
+<section id="certifications">
+  <div class="wrap">
+    <div class="section-head"><div><div class="eyebrow">06 / Certifications</div><h2>Security foundations.</h2></div></div>
+    <div class="certs">
+      <div class="card cert"><div class="certmark">CC</div><div><strong>ISC2 Certified in Cybersecurity</strong><small>ISC2 CC</small></div></div>
+      <div class="card cert"><div class="certmark">G</div><div><strong>Google Cybersecurity Professional Certificate</strong><small>Google / Coursera</small></div></div>
+      <div class="card cert"><div class="certmark">F</div><div><strong>Fortinet Certified Associate in Cybersecurity</strong><small>FortiGate Operator — NSE 3</small></div></div>
+      <div class="card cert"><div class="certmark">F</div><div><strong>Fortinet NSE 1 & NSE 2</strong><small>Threat Landscape and Technical Introduction</small></div></div>
+    </div>
+    <p class="smallnote">Certification names follow the résumé. Add credential verification links if you want recruiters to verify each credential online.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contactbox">
+      <div><div class="eyebrow">07 / Contact</div><h2>Let's talk security.</h2><p>Available for cybersecurity internships and entry-level SOC Analyst roles.</p><p style="margin-top:8px">Tamil Nadu, India · English, Tamil, Telugu</p></div>
+      <div class="actions" style="margin:0;flex-direction:column"><a class="btn primary" href="mailto:lokeshwar.v06@gmail.com">Email me ↗</a><a class="btn" href="https://www.linkedin.com/in/lokeshwar-v-011b20289" target="_blank" rel="noopener">Connect on LinkedIn ↗</a><a class="btn" href="resume.pdf" target="_blank" rel="noopener">Open résumé ↗</a></div>
+    </div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap footerin"><span>© <span id="year"></span> Lokeshwar V · Cybersecurity Portfolio</span><span>Built for GitHub Pages · HTML / CSS / JavaScript</span></div></footer>
+<script>
+const menu=document.getElementById('menu'), nav=document.getElementById('navlinks');
+menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');}));
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
